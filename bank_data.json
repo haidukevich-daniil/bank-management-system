@@ -1,0 +1,90 @@
+{
+    "customers": [
+        {
+            "customer_id": 1,
+            "name": "Daniel Haidukevich",
+            "age": 18,
+            "password": "Dany23062008",
+            "account_ids": [
+                3,
+                4
+            ],
+            "card_numbers": [
+                "1568656858553814",
+                "6865700530169215"
+            ]
+        }
+    ],
+    "accounts": [
+        {
+            "type": "SavingsAccount",
+            "account_id": 3,
+            "owner_id": 1,
+            "balance": 1000.1369863013699,
+            "transactions": [
+                {
+                    "transaction_id": 1,
+                    "transaction_type": "Deposit",
+                    "amount": 1000.0,
+                    "date": "2026-09-03 17:58:48"
+                },
+                {
+                    "transaction_id": 2,
+                    "transaction_type": "Interest",
+                    "amount": 0.136986301369863,
+                    "date": "2026-09-04 10:21:52"
+                }
+            ],
+            "interest_rate": 0.05,
+            "last_interest_date": "2026-09-04"
+        },
+        {
+            "type": "Account",
+            "account_id": 4,
+            "owner_id": 1,
+            "balance": 135.0,
+            "transactions": [
+                {
+                    "transaction_id": 1,
+                    "transaction_type": "Deposit",
+                    "amount": 155.0,
+                    "date": "2026-09-04 10:22:58"
+                },
+                {
+                    "transaction_id": 2,
+                    "transaction_type": "Withdraw",
+                    "amount": 85.0,
+                    "date": "2026-09-04 10:23:05"
+                },
+                {
+                    "transaction_id": 3,
+                    "transaction_type": "Deposit",
+                    "amount": 90.0,
+                    "date": "2026-09-04 10:24:37"
+                },
+                {
+                    "transaction_id": 4,
+                    "transaction_type": "Withdraw",
+                    "amount": 25.0,
+                    "date": "2026-09-04 10:24:40"
+                }
+            ]
+        }
+    ],
+    "cards": [
+        {
+            "card_number": "1568656858553814",
+            "account_id": 3,
+            "pin": "6685",
+            "is_blocked": false,
+            "failed_attempts": 0
+        },
+        {
+            "card_number": "6865700530169215",
+            "account_id": 4,
+            "pin": "4251",
+            "is_blocked": false,
+            "failed_attempts": 0
+        }
+    ]
+}
